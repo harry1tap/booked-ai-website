@@ -72,7 +72,7 @@ The website is a single page with five sections in this order:
 
 ### Colour Palette — IGNITE
 - Primary / Background: Black `#0D0D0D`
-- Accent: Blaze Orange `#E07A2F`
+- Accent: Blaze Orange `#E65224`
 - Contrast / Breathing room: White `#F5F5F5`
 - **NEVER use blue** — deliberate brand decision to stand apart from every other AI/agency brand
 - No gradients, no shadows, no 3D effects, no textures

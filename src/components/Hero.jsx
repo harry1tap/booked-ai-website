@@ -41,7 +41,7 @@ export default function Hero() {
           <svg
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#E07A2F"
+            stroke="#E65224"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

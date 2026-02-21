@@ -2,7 +2,7 @@
 
 @theme {
   --color-black: #0D0D0D;
-  --color-orange: #E07A2F;
+  --color-orange: #E65224;
   --color-white: #F5F5F5;
   --font-outfit: "Outfit", sans-serif;
 }
@@ -71,10 +71,10 @@ body {
 .stripe-animated {
   background: repeating-linear-gradient(
     -45deg,
-    #E07A2F,
-    #E07A2F 10px,
-    #c9631f 10px,
-    #c9631f 20px
+    #E65224,
+    #E65224 10px,
+    #b8411b 10px,
+    #b8411b 20px
   );
   background-size: 28.28px 100%;
   animation: stripe-move 0.6s linear infinite;
