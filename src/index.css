@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #0D0D0D;
+  --color-orange: #E07A2F;
+  --color-white: #F5F5F5;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-outfit);
+  background-color: #0D0D0D;
+  color: #F5F5F5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal animation base */
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for grid children */
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.1s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.2s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.3s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.4s; }
+
+/* Growth line draw animation */
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 400;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.draw-line {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw-line 2s ease-out 0.5s forwards;
+}
+
+/* Striped banner animation */
+@keyframes stripe-move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 28.28px 0;
+  }
+}
+
+.stripe-animated {
+  background: repeating-linear-gradient(
+    -45deg,
+    #E07A2F,
+    #E07A2F 10px,
+    #c9631f 10px,
+    #c9631f 20px
+  );
+  background-size: 28.28px 100%;
+  animation: stripe-move 0.6s linear infinite;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .draw-line {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .stripe-animated {
+    animation: none;
+  }
+}
