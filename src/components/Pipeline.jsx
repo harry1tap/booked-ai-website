@@ -66,9 +66,6 @@ export default function Pipeline() {
           ref={ref}
           className={`text-center reveal ${isVisible ? 'visible' : ''}`}
         >
-          <p className="text-orange text-sm font-bold uppercase tracking-widest mb-3">
-            The Booked Jobs System
-          </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-10 md:mb-12">
             From First Click to <span className="text-orange">Calendar Booking</span>
           </h2>
