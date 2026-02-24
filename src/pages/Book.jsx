@@ -41,10 +41,10 @@ export default function Book() {
 
         <div className="mt-4 py-5 px-6 border border-orange/30 rounded-lg bg-orange/5 max-w-xl mx-auto text-center">
           <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
-            <span className="text-orange">5-10</span> Pre-Qualified, Booked Appointments
+            <span className="text-orange">15-30</span> Qualified, Booked Appointments
           </p>
           <p className="text-lg md:text-xl font-bold text-white/90">
-            Every Single Month.
+            In Your First 90 Days.
           </p>
           <p className="text-sm text-orange/80 font-medium mt-2">
             (Or We Work For Free)
@@ -57,7 +57,7 @@ export default function Book() {
       <section className="bg-orange py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black leading-tight mb-5">
-            Ready to Become The Obvious Choice?
+            Ready to Become A Leader?
           </h2>
 
           <p className="text-black/80 text-base md:text-lg mb-8 max-w-xl mx-auto">
@@ -68,7 +68,7 @@ export default function Book() {
             href="#calendar"
             className="inline-block bg-black px-8 py-3.5 rounded hover:bg-black/80 transition-colors duration-200"
           >
-            <span className="block text-orange font-bold text-base md:text-lg">Become The Obvious Choice</span>
+            <span className="block text-orange font-bold text-base md:text-lg">Become A Leader</span>
             <span className="block text-xs text-white/30 font-medium">1 Trade Per Area</span>
           </a>
         </div>

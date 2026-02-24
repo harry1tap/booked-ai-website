@@ -21,15 +21,15 @@ export default function Hero() {
         </h1>
 
         <p className="text-orange text-sm md:text-base font-medium mb-8 tracking-wide">
-          So you can focus on your craft, not your marketing
+          So you can focus on what you do best
         </p>
 
         <div className="mb-8 py-5 px-6 border border-orange/30 rounded-lg bg-orange/5 max-w-xl mx-auto">
           <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
-            <span className="text-orange">5-10</span> Pre-Qualified, Booked Appointments
+            <span className="text-orange">15-30</span> Qualified, Booked Appointments
           </p>
           <p className="text-lg md:text-xl font-bold text-white/90">
-            Every Single Month.
+            In Your First 90 Days.
           </p>
           <p className="text-sm text-orange/80 font-medium mt-2">
             (Or We Work For Free)
@@ -56,7 +56,7 @@ export default function Hero() {
           to="/book"
           className="inline-block bg-orange text-black px-8 py-3.5 rounded hover:scale-105 hover:brightness-110 transition-all duration-200"
         >
-          <span className="block font-bold text-base md:text-lg text-white">Become The Obvious Choice</span>
+          <span className="block font-bold text-base md:text-lg text-white">Become A Leader</span>
           <span className="block text-xs text-white/50 font-medium">1 Trade Per Area</span>
         </Link>
 
