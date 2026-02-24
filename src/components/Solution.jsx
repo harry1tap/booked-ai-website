@@ -5,17 +5,17 @@ const STEPS = [
     number: '01',
     title: 'Smart Ads, Real Enquiries',
     description:
-      "We analyse your competition, make you stand out from the rest of the market, and build targeted Meta ad campaigns to attract ideal-fit, high-intent customers who actually need what you do.",
+      "We analyse your competition, position you as the standout in your market, run targeted Meta Ad campaigns that attract high-intent customers who actually want what you do.",
   },
   {
     number: '02',
-    title: 'Your AI Booking System',
+    title: 'AI Qualifies & Books',
     description:
       "Our AI system works around the clock, turning interested leads into booked appointments. It handles all the scheduling while you focus on running your business.",
   },
   {
     number: '03',
-    title: 'Build Authority On Autopilot',
+    title: 'Become The Authority In Your Area',
     description:
       "While you deliver great work, our system collects Google reviews from every happy customer and builds your online presence automatically. More reviews, higher rankings, more trust. You become the obvious choice.",
   },
