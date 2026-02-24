@@ -17,7 +17,7 @@ export default function Hero() {
         />
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-tight mb-4">
-          We Turn Local Businesses Into The Obvious Choice With Custom AI Growth Systems
+          We Help Local Businesses Become The Market Leader. We Target Your Ideal Customer, AI Qualifies & Books Straight Into Your Calendar.
         </h1>
 
         <p className="text-orange text-sm md:text-base font-medium mb-8 tracking-wide">
