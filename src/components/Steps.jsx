@@ -1,25 +1,47 @@
 import useScrollReveal from '../hooks/useScrollReveal.js'
 
+const QUALIFICATION_CHECKS = [
+  'Confirms property ownership',
+  'Checks roof suitability',
+  'Verifies their timeline for going solar',
+  'Filters out non-serious enquiries',
+]
+
 const STEPS = [
   {
     number: '01',
-    title: 'We Find The Right Homeowners',
-    description: "Not everyone scrolling Facebook wants solar. We run targeted ads to reach homeowners in your area who are already thinking about it, the ones comparing quotes, checking EPC ratings, or looking into the SEG tariff. The kind of people who are ready to move, not just browsing.",
+    title: 'We Find Homeowners Already Thinking About Solar',
+    paragraphs: [
+      'Not random people. Not "interested in saving money." We run hyper-targeted ads to homeowners in your area who are actively showing buying signals for solar, things like researching energy costs, engaging with solar content, or owning the right property type.',
+      'Your ads only show to people in your specific territory. No overlap with other installers.',
+    ],
   },
   {
     number: '02',
-    title: 'AI Qualifies In Under 60 Seconds',
-    description: "The moment someone enquires, our AI picks up the conversation. Confirms they own the property, checks their roof situation, asks about energy bills and budget, and filters out anyone who isn't serious. No more driving 40 minutes to find out they have a £2k budget.",
+    title: 'AI Qualifies Every Lead Before You Ever See Them',
+    paragraphs: [
+      "Here's where most lead gen falls apart. You get a name and number, then waste 20 minutes calling someone who lives in a flat or rents their house.",
+      'Our AI assistant contacts every lead within 60 seconds of them filling out the form. It has a real conversation and filters out anyone who isn\'t a genuine prospect.',
+      'Before a lead reaches your calendar, they\'ve been checked on:',
+    ],
+    checklist: QUALIFICATION_CHECKS,
+    closing: "If they don't qualify, they never reach your calendar. If they do, the AI books them straight in.\n\nThis isn't a basic chatbot sending \"Thanks for your enquiry!\" It asks the same questions your best salesperson would ask, just faster and at 11pm on a Sunday when you're not working.",
   },
   {
     number: '03',
-    title: 'Serious Prospects Get Booked Into Your Calendar',
-    description: "The ones who pass qualification get booked directly into your diary, with all their details attached. You get a notification, you show up, you quote. That's your only job in this process.",
+    title: 'Qualified Bookings Appear In Your Calendar',
+    paragraphs: [
+      "You get a notification. Name, number, property details, qualification answers, and a booked time slot. No chasing. No phone tag. No calling back leads from three days ago who've already gone with someone else.",
+      "You check your calendar in the morning, see who you're visiting, and go quote.",
+    ],
   },
   {
     number: '04',
-    title: 'Your Reviews Grow After Every Install',
-    description: "After you complete a job, our system sends your customer a review request right when they're the happiest. Your Google profile builds itself, more reviews, higher rankings, more trust. Over time, you become the obvious choice before someone even clicks an ad.",
+    title: 'We Collect 5-Star Reviews After Every Install',
+    paragraphs: [
+      'After you complete the job, our system automatically follows up with the homeowner and makes it easy for them to leave a Google review.',
+      "Most solar companies have 10-30 reviews. We help you build a review profile that compounds over time, so your word-of-mouth gets stronger even while paid leads keep coming in.",
+    ],
   },
 ]
 
@@ -36,12 +58,37 @@ function StepCard({ step, index }) {
         <span className="text-orange text-3xl md:text-4xl font-extrabold">{step.number}</span>
       </div>
       <div>
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2">
+        <h3 className="text-lg md:text-xl font-bold text-white mb-3">
           {step.title}
         </h3>
-        <p className="text-white/60 text-sm md:text-base leading-relaxed">
-          {step.description}
-        </p>
+        <div className="space-y-3">
+          {step.paragraphs.map((p, i) => (
+            <p key={i} className="text-white/60 text-sm md:text-base leading-relaxed">
+              {p}
+            </p>
+          ))}
+        </div>
+        {step.checklist && (
+          <ul className="mt-4 space-y-2">
+            {step.checklist.map((item, i) => (
+              <li key={i} className="flex items-center gap-2.5 text-white/80 text-sm md:text-base">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E65224" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 shrink-0">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+        {step.closing && (
+          <div className="mt-4 space-y-3">
+            {step.closing.split('\n\n').map((p, i) => (
+              <p key={i} className="text-white/60 text-sm md:text-base leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -57,9 +104,9 @@ export default function Steps() {
           ref={ref}
           className={`text-center mb-10 md:mb-14 reveal ${isVisible ? 'visible' : ''}`}
         >
-          <p className="text-orange text-sm font-bold uppercase tracking-widest mb-3">
-            Step By Step
-          </p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            How It Works <span className="text-orange">(And Why The Leads Are Different)</span>
+          </h2>
         </div>
 
         <div className="space-y-5">

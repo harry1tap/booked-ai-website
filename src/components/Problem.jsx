@@ -3,33 +3,33 @@ import useScrollReveal from '../hooks/useScrollReveal.js'
 const PAIN_POINTS = [
   {
     emoji: '📞',
-    title: "You're On A Roof When The Lead Comes In",
-    description: "A homeowner enquires at 11am. You're 6 metres up in Swindon with a drill in your hand. By the time you call back at 4pm, they've already spoken to two other installers. You were the better company. You just weren't the fastest.",
+    title: 'Leads Come In When You\'re On A Roof',
+    description: "You're mid-install, phone buzzing in your pocket. By the time you call back, they've already spoken to two other companies.",
   },
   {
     emoji: '🎲',
     title: 'Feast Or Famine Every Month',
-    description: "Some months you're turning work away. Other months you're wondering where the next job's coming from. Word of mouth is great, but you can't control when referrals show up or how many.",
+    description: "One month you're turning work away. Next month you're wondering where the jobs went. Word of mouth doesn't scale, it fluctuates.",
   },
   {
     emoji: '🚗',
-    title: 'Driving 40 Minutes To A Tyre-Kicker',
-    description: 'You arrive at a survey to find out they have a £2k budget for a full battery system, or are "just getting some quotes." Unqualified leads waste your fuel, your afternoon, and your patience.',
+    title: 'Driving 45 Minutes To Quote A Tyre-Kicker',
+    description: 'They sounded keen on the phone. Then you arrive and they\'re "just getting prices." That\'s half a day gone.',
   },
   {
     emoji: '🔥',
-    title: 'Got Burned By An Agency Before',
-    description: "You paid someone, got a spreadsheet of names, and chased half of them with no response. The leads weren't qualified. The follow-up was on you. The agency blamed your sales process. Sound familiar?",
+    title: 'Burned By Agencies Before',
+    description: "You've paid for \"leads\" that were shared with five other installers, or worse, weren't even real homeowners. Once bitten, twice shy.",
   },
   {
     emoji: '⏰',
     title: "You Didn't Start This To Sit At A Desk",
-    description: "You started a solar company to install solar, not to spend evenings chasing leads, sending follow-up texts, and updating spreadsheets. But if you don't do it, the pipeline dries up.",
+    description: "You're an installer, not a marketing manager. But somehow you're spending evenings chasing leads instead of being with your family.",
   },
   {
     emoji: '⭐',
-    title: 'Great Work, Not Enough Reviews To Show It',
-    description: "Your installs are quality. But your Google profile has 12 reviews. The competitor down the road has 80, and worse work. They're getting the business because they look more established online.",
+    title: 'Great Work, Not Enough Reviews',
+    description: "Your installs are quality. Your customers are happy. But your Google profile doesn't reflect it, and new prospects check reviews before they call.",
   },
 ]
 
@@ -62,16 +62,9 @@ export default function Problem() {
           ref={ref}
           className={`text-center mb-12 md:mb-16 reveal ${isVisible ? 'visible' : ''}`}
         >
-          <p className="text-orange text-sm font-bold uppercase tracking-widest mb-3">
-            The Real Issue
-          </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
-            You Don't Have A Lead Problem.<br />
-            You Have A <span className="text-orange">Speed</span> Problem.
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            Sound Familiar?
           </h2>
-          <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto">
-            Your installs are solid. Your customers are happy. But getting new work? That's where things break down.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
@@ -79,10 +72,6 @@ export default function Problem() {
             <PainCard key={i} point={point} index={i} />
           ))}
         </div>
-
-        <p className="text-center text-xl md:text-2xl font-extrabold text-white mt-12 md:mt-16">
-          That's what we fix.
-        </p>
       </div>
     </section>
   )

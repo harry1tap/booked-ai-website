@@ -17,28 +17,16 @@ export default function Hero() {
         />
 
         <p className="text-white/40 text-xs md:text-sm font-bold uppercase tracking-[0.2em] mb-4">
-          For UK Solar Installers | 1 Per Area
+          Limited to 1 installer per region. Check if your area's still open.
         </p>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-tight mb-4">
-          Fill Your Calendar With <span className="text-orange">Pre-Qualified Solar Surveys</span> On Autopilot
+          <span className="text-orange">20-30 Pre-Qualified Survey Bookings</span> In 90 Days. Or We Work For Free.
         </h1>
 
-        <p className="text-white/60 text-sm md:text-base font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
-          We run targeted Meta Ads to attract homeowners ready to go solar. Our AI responds in 60 seconds, qualifies every lead, and books high-intent surveys straight into your calendar. You just show up and close.
+        <p className="text-white/60 text-sm md:text-base font-medium mb-10 max-w-2xl mx-auto leading-relaxed">
+          Qualified homeowners, already interested in solar, booked into your calendar before you've finished your current install. You show up, quote, close.
         </p>
-
-        <div className="mb-8 py-5 px-6 border border-orange/30 rounded-lg bg-orange/5 max-w-xl mx-auto">
-          <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
-            <span className="text-orange">20-30</span> Qualified, Booked Surveys
-          </p>
-          <p className="text-lg md:text-xl font-bold text-white/90">
-            In Your First 90 Days.
-          </p>
-          <p className="text-sm text-orange/80 font-medium mt-2">
-            Or We Work For Free Until We Deliver
-          </p>
-        </div>
 
         {/* Animated chevron */}
         <div className="mb-6 flex justify-center">
@@ -60,8 +48,7 @@ export default function Hero() {
           to="/book"
           className="inline-block bg-orange text-black px-8 py-3.5 rounded hover:scale-105 hover:brightness-110 transition-all duration-200"
         >
-          <span className="block font-bold text-base md:text-lg text-white">Check Your Area's Available</span>
-          <span className="block text-xs text-white/50 font-medium">Free 15-min call — no contracts, no pressure</span>
+          <span className="block font-bold text-base md:text-lg text-white">Check If Your Area's Still Open</span>
         </Link>
 
         {/* Client logos */}
