@@ -20,8 +20,8 @@ export default function Hero() {
           Fill Your Calendar With <span className="text-orange">Pre-Qualified Solar Surveys</span> On Autopilot
         </h1>
 
-        <p className="text-orange text-sm md:text-base font-medium mb-8 tracking-wide">
-          So you can focus on what you do best
+        <p className="text-white/60 text-sm md:text-base font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
+          We run targeted Meta Ads to attract homeowners ready to go solar. Our AI responds in 60 seconds, qualifies every lead, and books high-intent surveys straight into your calendar. You just show up and close.
         </p>
 
         <div className="mb-8 py-5 px-6 border border-orange/30 rounded-lg bg-orange/5 max-w-xl mx-auto">
