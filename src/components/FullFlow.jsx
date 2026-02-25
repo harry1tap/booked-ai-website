@@ -1,10 +1,10 @@
 import useScrollReveal from '../hooks/useScrollReveal.js'
 
 const FLOW_STEPS = [
-  { label: 'Homeowner sees ad' },
-  { label: 'AI qualifies' },
-  { label: 'Survey booked' },
-  { label: 'You close', highlighted: true },
+  { label: 'Homeowner sees ad', short: 'Sees ad' },
+  { label: 'AI qualifies', short: 'AI qualifies' },
+  { label: 'Survey booked', short: 'Booked' },
+  { label: 'You close', short: 'You close', highlighted: true },
 ]
 
 function Arrow() {
@@ -59,7 +59,7 @@ export default function FullFlow() {
                         : 'border-white/20 bg-white/5 text-white'
                     }`}
                   >
-                    <span className="font-bold text-[10px] whitespace-nowrap">{step.label}</span>
+                    <span className="font-bold text-[10px] whitespace-nowrap">{step.short}</span>
                   </div>
                   {i < FLOW_STEPS.length - 1 && (
                     <span className="text-white/30 text-[10px] font-bold shrink-0">→</span>
