@@ -26,13 +26,13 @@ export default function Hero() {
 
         <div className="mb-8 py-5 px-6 border border-orange/30 rounded-lg bg-orange/5 max-w-xl mx-auto">
           <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
-            <span className="text-orange">15-30</span> Qualified, Booked Appointments
+            <span className="text-orange">20-30</span> Qualified, Booked Surveys
           </p>
           <p className="text-lg md:text-xl font-bold text-white/90">
             In Your First 90 Days.
           </p>
           <p className="text-sm text-orange/80 font-medium mt-2">
-            (Or We Work For Free)
+            Or We Work For Free Until We Deliver
           </p>
         </div>
 
