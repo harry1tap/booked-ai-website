@@ -46,25 +46,27 @@ export default function FullFlow() {
             ))}
           </div>
 
-          {/* Mobile: vertical stack */}
-          <div className="flex md:hidden flex-col items-center gap-3">
-            {FLOW_STEPS.map((step, i) => (
-              <div key={step.label} className="flex flex-col items-center gap-3">
-                <div
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
-                    step.highlighted
-                      ? 'border-orange bg-orange/10 text-orange'
-                      : 'border-white/20 bg-white/5 text-white'
-                  }`}
-                >
-                  <span>{step.emoji}</span>
-                  <span className="font-bold text-xs">{step.label}</span>
+          {/* Mobile: horizontal scroll */}
+          <div className="flex md:hidden overflow-x-auto scrollbar-hide -mx-6 px-6">
+            <div className="flex items-center gap-2 mx-auto">
+              {FLOW_STEPS.map((step, i) => (
+                <div key={step.label} className="flex items-center gap-2 shrink-0">
+                  <div
+                    className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-sm ${
+                      step.highlighted
+                        ? 'border-orange bg-orange/10 text-orange'
+                        : 'border-white/20 bg-white/5 text-white'
+                    }`}
+                  >
+                    <span>{step.emoji}</span>
+                    <span className="font-bold text-xs whitespace-nowrap">{step.label}</span>
+                  </div>
+                  {i < FLOW_STEPS.length - 1 && (
+                    <span className="text-white/30 text-xs font-bold shrink-0">→</span>
+                  )}
                 </div>
-                {i < FLOW_STEPS.length - 1 && (
-                  <span className="text-white/30 text-xs font-bold">↓</span>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
