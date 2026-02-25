@@ -8,7 +8,7 @@ const CLIENT_LOGOS = [
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-black flex items-start md:items-center pt-14 md:pt-12 pb-6 md:pb-8">
+    <section className="bg-black pt-16 md:pt-20 pb-6 md:pb-8">
       <div className="max-w-4xl mx-auto px-6 md:px-12 w-full text-center">
         <img
           src="/SVG (4).svg"
@@ -52,7 +52,7 @@ export default function Hero() {
         </Link>
 
         {/* Client logos */}
-        <div className="mt-10 pt-8 border-t border-white/10">
+        <div className="mt-8 pt-6 border-t border-white/10">
           <div className="flex items-center justify-center gap-6 md:gap-8">
             {CLIENT_LOGOS.map((client) => (
               <div
