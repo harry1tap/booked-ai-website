@@ -66,8 +66,13 @@ export default function Pipeline() {
           ref={ref}
           className={`text-center reveal ${isVisible ? 'visible' : ''}`}
         >
+          <p className="text-orange text-sm font-bold uppercase tracking-widest mb-3">
+            What We Do
+          </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight mb-10 md:mb-12">
-            From First Click to <span className="text-orange">Calendar Booking</span>
+            From Ad Click To <span className="text-orange">Booked Survey.</span>
+            <br />
+            Without You Touching A Thing.
           </h2>
 
           <div className="border border-white/10 bg-white/[0.03] rounded-2xl p-6 md:p-10">
@@ -140,7 +145,7 @@ export default function Pipeline() {
             </div>
 
             <p className="text-white/50 text-sm md:text-base mt-6 md:mt-8 max-w-lg mx-auto leading-relaxed">
-              Each step feeds the next, creating a predictable flow from ad click to booked appointment. No chasing. No guesswork. Just a system that delivers.
+              Each step feeds the next, creating a predictable flow from ad click to booked survey. No chasing. No guesswork. Just a system that delivers.
             </p>
           </div>
         </div>

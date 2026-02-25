@@ -16,6 +16,10 @@ export default function Hero() {
           className="h-10 md:h-14 mx-auto mb-8"
         />
 
+        <p className="text-white/40 text-xs md:text-sm font-bold uppercase tracking-[0.2em] mb-4">
+          For UK Solar Installers | 1 Per Area
+        </p>
+
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-tight mb-4">
           Fill Your Calendar With <span className="text-orange">Pre-Qualified Solar Surveys</span> On Autopilot
         </h1>
@@ -56,8 +60,8 @@ export default function Hero() {
           to="/book"
           className="inline-block bg-orange text-black px-8 py-3.5 rounded hover:scale-105 hover:brightness-110 transition-all duration-200"
         >
-          <span className="block font-bold text-base md:text-lg text-white">Apply For Your Area</span>
-          <span className="block text-xs text-white/50 font-medium">1 Installer Per Area</span>
+          <span className="block font-bold text-base md:text-lg text-white">Check Your Area's Available</span>
+          <span className="block text-xs text-white/50 font-medium">Free 15-min call — no contracts, no pressure</span>
         </Link>
 
         {/* Client logos */}
