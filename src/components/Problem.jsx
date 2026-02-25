@@ -56,7 +56,7 @@ export default function Problem() {
   const [ref, isVisible] = useScrollReveal(0.1)
 
   return (
-    <section className="bg-black py-16 md:py-24">
+    <section className="bg-black pt-8 pb-16 md:pt-12 md:pb-24">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div
           ref={ref}
