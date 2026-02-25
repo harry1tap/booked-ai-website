@@ -95,53 +95,27 @@ export default function Pipeline() {
               ))}
             </div>
 
-            {/* Mobile: 2x2 grid with arrows */}
+            {/* Mobile: vertical stack */}
             <div className="flex md:hidden flex-col items-center gap-3">
-              <div className="flex items-center gap-3">
-                {STEPS.slice(0, 2).map((step, i) => (
-                  <div key={step.label} className="flex items-center gap-3">
-                    <div
-                      className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
-                        step.highlighted
-                          ? 'border-orange bg-orange/10 text-orange'
-                          : 'border-white/20 bg-white/5 text-white'
-                      }`}
-                    >
-                      {step.icon}
-                      <span className="font-bold text-xs">{step.label}</span>
-                    </div>
-                    {i === 0 && (
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white/30 shrink-0">
-                        <polyline points="9 6 15 12 9 18" />
-                      </svg>
-                    )}
+              {STEPS.map((step, i) => (
+                <div key={step.label} className="flex flex-col items-center gap-3">
+                  <div
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
+                      step.highlighted
+                        ? 'border-orange bg-orange/10 text-orange'
+                        : 'border-white/20 bg-white/5 text-white'
+                    }`}
+                  >
+                    {step.icon}
+                    <span className="font-bold text-xs">{step.label}</span>
                   </div>
-                ))}
-              </div>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white/30">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <div className="flex items-center gap-3">
-                {STEPS.slice(2).map((step, i) => (
-                  <div key={step.label} className="flex items-center gap-3">
-                    <div
-                      className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
-                        step.highlighted
-                          ? 'border-orange bg-orange/10 text-orange'
-                          : 'border-white/20 bg-white/5 text-white'
-                      }`}
-                    >
-                      {step.icon}
-                      <span className="font-bold text-xs">{step.label}</span>
-                    </div>
-                    {i === 0 && (
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white/30 shrink-0">
-                        <polyline points="9 6 15 12 9 18" />
-                      </svg>
-                    )}
-                  </div>
-                ))}
-              </div>
+                  {i < STEPS.length - 1 && (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-white/30">
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  )}
+                </div>
+              ))}
             </div>
 
             <p className="text-white/50 text-sm md:text-base mt-6 md:mt-8 max-w-lg mx-auto leading-relaxed">

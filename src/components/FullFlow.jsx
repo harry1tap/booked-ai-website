@@ -46,43 +46,25 @@ export default function FullFlow() {
             ))}
           </div>
 
-          {/* Mobile: 2x2 */}
+          {/* Mobile: vertical stack */}
           <div className="flex md:hidden flex-col items-center gap-3">
-            <div className="flex items-center gap-3">
-              {FLOW_STEPS.slice(0, 2).map((step, i) => (
-                <div key={step.label} className="flex items-center gap-3">
-                  <div
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
-                      step.highlighted
-                        ? 'border-orange bg-orange/10 text-orange'
-                        : 'border-white/20 bg-white/5 text-white'
-                    }`}
-                  >
-                    <span>{step.emoji}</span>
-                    <span className="font-bold text-xs">{step.label}</span>
-                  </div>
-                  {i === 0 && <span className="text-white/30 text-xs font-bold">→</span>}
+            {FLOW_STEPS.map((step, i) => (
+              <div key={step.label} className="flex flex-col items-center gap-3">
+                <div
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
+                    step.highlighted
+                      ? 'border-orange bg-orange/10 text-orange'
+                      : 'border-white/20 bg-white/5 text-white'
+                  }`}
+                >
+                  <span>{step.emoji}</span>
+                  <span className="font-bold text-xs">{step.label}</span>
                 </div>
-              ))}
-            </div>
-            <span className="text-white/30 text-xs font-bold">↓</span>
-            <div className="flex items-center gap-3">
-              {FLOW_STEPS.slice(2).map((step, i) => (
-                <div key={step.label} className="flex items-center gap-3">
-                  <div
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm ${
-                      step.highlighted
-                        ? 'border-orange bg-orange/10 text-orange'
-                        : 'border-white/20 bg-white/5 text-white'
-                    }`}
-                  >
-                    <span>{step.emoji}</span>
-                    <span className="font-bold text-xs">{step.label}</span>
-                  </div>
-                  {i === 0 && <span className="text-white/30 text-xs font-bold">→</span>}
-                </div>
-              ))}
-            </div>
+                {i < FLOW_STEPS.length - 1 && (
+                  <span className="text-white/30 text-xs font-bold">↓</span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
