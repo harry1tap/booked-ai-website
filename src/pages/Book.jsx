@@ -68,8 +68,8 @@ export default function Book() {
             href="#calendar"
             className="inline-block bg-black px-8 py-3.5 rounded hover:bg-black/80 transition-colors duration-200"
           >
-            <span className="block text-orange font-bold text-base md:text-lg">Become A Leader</span>
-            <span className="block text-xs text-white/30 font-medium">1 Trade Per Area</span>
+            <span className="block text-orange font-bold text-base md:text-lg">Apply For Your Area</span>
+            <span className="block text-xs text-white/30 font-medium">1 Installer Per Area</span>
           </a>
         </div>
       </section>

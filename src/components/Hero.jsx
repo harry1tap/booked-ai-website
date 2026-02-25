@@ -56,8 +56,8 @@ export default function Hero() {
           to="/book"
           className="inline-block bg-orange text-black px-8 py-3.5 rounded hover:scale-105 hover:brightness-110 transition-all duration-200"
         >
-          <span className="block font-bold text-base md:text-lg text-white">Become A Leader</span>
-          <span className="block text-xs text-white/50 font-medium">1 Trade Per Area</span>
+          <span className="block font-bold text-base md:text-lg text-white">Apply For Your Area</span>
+          <span className="block text-xs text-white/50 font-medium">1 Installer Per Area</span>
         </Link>
 
         {/* Client logos */}
