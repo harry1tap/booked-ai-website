@@ -17,7 +17,7 @@ export default function Hero() {
         />
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-tight mb-4">
-          We Help Local Businesses Become The Market Leader. We Target Your Ideal Customer, AI Qualifies & Books Straight Into Your Calendar.
+          Fill Your Calendar With <span className="text-orange">Pre-Qualified Solar Surveys</span> On Autopilot
         </h1>
 
         <p className="text-orange text-sm md:text-base font-medium mb-8 tracking-wide">
