@@ -5,6 +5,7 @@ const CRITERIA = [
   'Are tired of chasing leads manually between installs',
   'Want a consistent pipeline without hiring a sales team',
   'Have been burned by agencies selling shared or unqualified leads',
+  'Want to stop paying retainers and only pay for real, booked appointments',
   'Are ready to own their area, not compete with five other companies for the same postcode',
 ]
 

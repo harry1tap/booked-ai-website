@@ -32,7 +32,7 @@ const STEPS = [
     title: 'Qualified Bookings Appear In Your Calendar',
     paragraphs: [
       "You get a notification. Name, number, property details, qualification answers, and a booked time slot. No chasing. No phone tag. No calling back leads from three days ago who've already gone with someone else.",
-      "You check your calendar in the morning, see who you're visiting, and go quote.",
+      "You check your calendar in the morning, see who you're visiting, and go quote. This is the only point you pay. No booking, no charge.",
     ],
   },
   {

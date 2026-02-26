@@ -18,7 +18,7 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-12 mt-6 pt-4 border-t border-white/5">
         <p className="text-white/20 text-[0.65rem] leading-relaxed text-center max-w-3xl mx-auto mb-4">
-          Growth examples are only estimates of what is possible to achieve. Results are based on many factors. Every business is unique and might experience different results. By leaving your details you agree that our company is not responsible for the success or failure of your business decisions relating to any information presented by our company, or our company products or services.
+          Results vary by business and location. Appointment volume depends on many factors including area, competition, and seasonality. By leaving your details you agree that our company is not responsible for the success or failure of your business decisions relating to any information presented by our company, or our company products or services.
         </p>
         <div className="flex items-center justify-center gap-4 mb-3">
           <Link to="/terms" className="text-white/30 hover:text-white/60 text-[0.65rem] transition-colors">
