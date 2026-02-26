@@ -25,7 +25,7 @@ export default function FinalCTA() {
           <span className="block text-white font-bold text-base md:text-lg">Check My Area</span>
         </Link>
 
-        <p className="text-white/30 text-sm font-medium mt-4">No contracts</p>
+        <p className="text-white/30 text-sm font-medium mt-4">No contracts. Pay per appointment only.</p>
       </div>
     </section>
   )

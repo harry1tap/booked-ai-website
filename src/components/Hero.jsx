@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-white leading-tight mb-4">
-          <span className="text-orange">20-30 Pre-Qualified Survey Bookings</span> In 90 Days. Or We Work For Free.
+          Pre-Qualified Solar Survey Bookings. <span className="text-orange">You Only Pay Per Appointment.</span>
         </h1>
 
         <p className="text-white/60 text-sm md:text-base font-medium mb-10 max-w-2xl mx-auto leading-relaxed">

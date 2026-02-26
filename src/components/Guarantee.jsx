@@ -10,18 +10,18 @@ export default function Guarantee() {
         className={`max-w-3xl mx-auto px-6 md:px-12 text-center reveal ${isVisible ? 'visible' : ''}`}
       >
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black leading-tight mb-8">
-          Our Guarantee
+          You Only Pay For Results
         </h2>
 
         <div className="space-y-5 text-black/80 text-base md:text-lg leading-relaxed">
           <p>
-            20-30 pre-qualified survey bookings in your calendar within 90 days. If we don't hit that number, we keep working for free until we do.
+            You don't pay a retainer. You don't pay setup fees. You only pay when a pre-qualified homeowner is booked into your calendar. If we don't book appointments, you don't pay. It's that simple.
           </p>
           <p>
-            No contracts. No setup fees. No "minimum 6-month commitment." We earn our keep by delivering results, not locking you in.
+            No contracts. No minimum commitment. No "locked in for 6 months." We earn your business every single month by delivering real appointments.
           </p>
           <p>
-            We only take on one installer per area because our system works best when we're fully focused on your territory. If we can't deliver for you, we don't deserve your business.
+            We only take on one installer per area because our system works best when we're fully focused on your territory. If we're not the right fit, you walk away. No strings.
           </p>
         </div>
       </div>
